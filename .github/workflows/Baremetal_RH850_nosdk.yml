@@ -1,0 +1,27 @@
+name: Baremetal_RH850_nosdk
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install Toolchain
+        run: |
+          wget https://github.com/ckormanyos/gcc-v850-unknown-elf/releases/download/v16.2.0/gcc-16.2.0-v850-unknown-elf.tar.gz
+          tar -xf gcc-16.2.0-v850-unknown-elf.tar.gz
+          $GITHUB_WORKSPACE/gcc-16.2.0-v850-unknown-elf/bin/v850-unknown-elf-gcc -v
+
+      - name: Build Binary
+        shell: bash
+        run: |
+          export TOOLCHAIN_GCC=$GITHUB_WORKSPACE/gcc-16.2.0-v850-unknown-elf/bin/
+          export PATH=$TOOLCHAIN_GCC:$PATH
+          cd $GITHUB_WORKSPACE/Build
+          chmod +x Rebuild.sh
+          ./Rebuild.sh
