@@ -103,9 +103,10 @@ The following tools are needed to build and flash the application :
 
 | Tool                        | Link                                                         |
 | --------------------------- | ------------------------------------------------------------ |
-| V850 GCC compiler (Linux)   | https://github.com/ckormanyos/gcc-v850-unknown-elf/releases/download/v16.2.0/gcc-16.2.0-v850-unknown-elf.tar.gz |
-| V850 GCC compiler (Windows) | https://github.com/ckormanyos/gcc-v850-unknown-elf/releases/download/v16.2.0/gcc-16.2.0-v850-unknown-elf_x86_64-w64-mingw32.zip |
-| Renesas Flash Programmer    | https://github.com/Chalandi/Baremetal_v850es_nosdk/blob/master/Tools/RFI/RFP_CLI_Linux_V32500_x64.tgz |
+| V850 GCC compiler (Linux)   | [gcc-16.2.0-v850-unknown-elf.tar.gz](https://github.com/ckormanyos/gcc-v850-unknown-elf/releases/download/v16.2.0/gcc-16.2.0-v850-unknown-elf.tar.gz) |
+| V850 GCC compiler (Windows) | [gcc-16.2.0-v850-unknown-elf_x86_64-w64-mingw32.zip](https://github.com/ckormanyos/gcc-v850-unknown-elf/releases/download/v16.2.0/gcc-16.2.0-v850-unknown-elf_x86_64-w64-mingw32.zip) |
+| Renesas Flash Programmer V3.25 (Linux)    | [RFP_CLI_Linux_V32500_x64.tgz](https://github.com/Chalandi/Baremetal_v850es_nosdk/blob/master/Tools/RFI/RFP_CLI_Linux_V32500_x64.tgz) |
+
 
 ## Continuous Integration
 
